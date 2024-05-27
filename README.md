@@ -11,8 +11,9 @@
 3. Set up the database and environment variables in `.env` file.
    - DATABASE_URL="mysql://username:password@localhost:3306/bookstore"
    - JWT_SECRET="any_strong_long_string"
-1. Run Prisma migrations: `npx prisma migrate dev`
-2. Start the server: `npx ts-node src/index.ts`
+4. Run Prisma migrations: `npx prisma migrate dev`
+5. Start the server: `npx ts-node src/index.ts`
+6. Server Runs On `http://localhost:3000` by default
 
 ## API Endpoints
 
@@ -37,7 +38,7 @@
                 }
 
         set the token in http request header while to crud or fetch on book database
-        
+
         authorization : "Long JWTtoken got while logged in account"
 
 ### Books
