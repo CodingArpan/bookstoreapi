@@ -10,8 +10,9 @@
 2. Install dependencies: `npm install`
 3. Set up the database and environment variables in `.env` file.
    `
-   - DATABASE_URL="mysql://username:password@localhost:3306/bookstore"
-   - JWT_SECRET="any_strong_long_string"
+    DATABASE_URL="mysql://username:password@localhost:3306/bookstore"
+    
+    JWT_SECRET="any_strong_long_string"
   `
 4. Run Prisma migrations: `npx prisma migrate dev`
 5. Start the server: `npx ts-node src/index.ts`
