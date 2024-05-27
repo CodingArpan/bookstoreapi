@@ -29,7 +29,7 @@
 2. `POST /auth/login` - Login and get a JWT token.
     - Request Body :
   
-                ``` javascript
+                ```
                 {
                     "email":"your_email@gmail.com",
                     "password": "password"
