@@ -27,7 +27,7 @@
                     "password": "password",
                     "role":"SELLER" / "USER"
                 }
-                
+
 2. `POST /auth/login` - Login and get a JWT token.
     - Request Body :
   
@@ -37,6 +37,7 @@
                 }
 
         set the token in http request header while to crud or fetch on book database
+        
         authorization : "Long JWTtoken got while logged in account"
 
 ### Books
