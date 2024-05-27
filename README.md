@@ -18,22 +18,22 @@
 
 ### Authentication
 
-- `POST /auth/signup` - Register a new user or seller.
-        Request Body :
+1. `POST /auth/signup` - Register a new user or seller.
+    - Request Body :
                 {
                     "name":"Your Name",
                     "email":"your_email@gmail.com",
-                    "password": "1234",
-                    "role":"SELLER / USER"
+                    "password": "password",
+                    "role":"SELLER" / "USER"
                 }
-- `POST /auth/login` - Login and get a JWT token.
-        Request Body :
+2. `POST /auth/login` - Login and get a JWT token.
+    - Request Body :
                 {
-                    "email":"arpseller@gmail.com",
-                    "password": "1234"
+                    "email":"your_email@gmail.com",
+                    "password": "password"
                 }
         set the token in http request header while to crud or fetch on book database
-        authorization : "Long toke got while logged in account"
+        authorization : "Long JWTtoken got while logged in account"
 
 ### Books
 
